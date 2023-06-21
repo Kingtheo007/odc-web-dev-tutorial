@@ -43,224 +43,283 @@
   </style>
 </head>
 
+<header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="Logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarExample01"
+        aria-controls="navbarExample01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarExample01">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" style="color: #fff;" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #fff;" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #fff;" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #fff;" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+</header>
+
+<style>
+  .navbar-nav .nav-item .nav-link {
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 30px;
+    padding: 10px 15px;
+    color: #000;
+    margin-right: 10px; /* Added margin */
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    background-color: #FFC107;
+    color: #fff;
+  }
+</style>
+
+
+
 
 
 <body>
-  <div style="padding: 50px;">
+  <div class="p-5 text-center bg-light">
+    <div style="padding: 50px 10px 50px 10px;">
 
-    <!-- Card deck -->
-    <div class="card-deck">
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <!-- Card -->
-        <div class="card">
-          <!-- Card image -->
-          <div class="view overlay">
-            <img class="card-img-top" src="images/web_dev_1.jpg" alt="boago">
-            <a href="#!">
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-          <!-- Card content -->
-          <div class="card-body">
-            <!-- Title -->
-            <h4 class="card-title">Boago</h4>
-            <!-- Text -->
-            <p class="card-text">A simple description about your hobbies</p>
-            <!-- Button -->
-            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-          </div>
-        </div>
-        <!-- Card -->
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <!-- Card -->
-        <div class="card mb-4">
-          <!-- Card image -->
-          <div class="view overlay">
-            <img class="card-img-top" src="images/web_dev_2.jpg" alt="Card image cap">
-            <a href="#!">
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-          <!-- Card content -->
-          <div class="card-body">
-            <!-- Title -->
-            <h4 class="card-title">Gorata</h4>
-            <!-- Text -->
-            <p class="card-text">A simple description about your hobbies</p>
-            <!-- Button -->
-            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-          </div>
-        </div>
-        <!-- Card -->
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <!-- Card -->
-        <div class="card mb-4">
-          <!-- Card image -->
-          <div class="view overlay">
-            <img class="card-img-top" src="images/web_dev_3.jpg" alt="Card image cap">
-            <a href="#!">
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-          <!-- Card content -->
-          <div class="card-body">
-            <!-- Title -->
-            <h4 class="card-title">Jamie </h4>
-            <!-- Text -->
-            <p class="card-text">A simple description about your hobbies</p>
-            <!-- Button -->
-            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-          </div>
-        </div>
-        <!-- Card -->
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <!-- Card -->
-        <div class="card">
-          <!-- Card image -->
-          <div class="view overlay">
-            <img class="card-img-top" src="images/web_dev_4.jpg" alt="Card image cap">
-            <a href="#!">
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-          <!-- Card content -->
-          <div class="card-body">
-            <!-- Title -->
-            <h4 class="card-title">Gaone </h4>
-            <!-- Text -->
-            <p class="card-text">A simple description about your hobbies</p>
-            <!-- Button -->
-            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-          </div>
-        </div>
-        <!-- Card -->
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <!-- Card -->
-        <div class="card mb-4">
-          <!-- Card image -->
-          <div class="view overlay">
-            <img class="card-img-top" src="images/web_dev_5.jpg" alt="Card image cap">
-            <a href="#!">
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-          <!-- Card content -->
-          <div class="card-body">
-            <!-- Title -->
-            <h4 class="card-title">Karabo</h4>
-            <!-- Text -->
-            <p class="card-text">A simple description about your hobbies</p>
-            <!-- Button -->
-            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-          </div>
-        </div>
-        <!-- Card -->
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <!-- Card -->
-        <div class="card mb-4">
-          <!-- Card image -->
-          <div class="view overlay">
-            <img class="card-img-top" src="images/web_dev_6.jpg" alt="Card image cap">
-            <a href="#!">
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-          <!-- Card content -->
-          <div class="card-body">
-            <!-- Title -->
-            <h4 class="card-title">Fiona </h4>
-            <!-- Text -->
-            <p class="card-text">A simple description about your hobbies</p>
-            <!-- Button -->
-            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-          </div>
-        </div>
-        <!-- Card -->
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <!-- Card -->
-        <div class="card mb-4">
-          <!-- Card image -->
-          <div class="view overlay">
-            <img class="card-img-top" src="images/web_dev_7.jpg" alt="Card image cap">
-            <a href="#!">
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-          <!-- Card content -->
-          <div class="card-body">
-            <!-- Title -->
-            <h4 class="card-title">Katlego</h4>
-            <!-- Text -->
-            <p class="card-text">A simple description about your hobbies</p>
-            <!-- Button -->
-            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-          </div>
-        </div>
-        <!-- Card -->
-      </div>
-
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <!-- Card -->
-        <div class="card mb-4">
-          <!-- Card image -->
-          <div class="view overlay">
-            <img class="card-img-top" src="images/web_dev_8.jpg" alt="Card image cap">
-            <a href="#!">
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-          <!-- Card content -->
-          <div class="card-body">
-            <!-- Title -->
-            <h4 class="card-title">Pono</h4>
-            <!-- Text -->
-            <p class="card-text">A simple description about your hobbies</p>
-            <!-- Button -->
-            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-          </div>
-        </div>
-        <!-- Card -->
-      </div>
-
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <!-- Card -->
-        <div class="card mb-4">
-          <!-- Card image -->
-          <div class="view overlay">
-            <img class="card-img-top" src="images/terminator.jpg" alt="Card image cap">
-            <a href="#!">
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-          <!-- Card content -->
-          <div class="card-body">
-            <!-- Title -->
-            <h4 class="card-title">Theo Motsisi</h4>
-            <!-- Text -->
-            <p class="card-text">A simple description about your hobbies</p>
-            <!-- Button -->
-            <div style="text-align: center;">
-              <div style="text-align: center;">
-                <button type="button" class="btn btn-light-blue btn-md custom-button">
-                  <i class="fas fa-info-circle"></i> Read more
-                </button>
-              </div>
-
+      <!-- Card deck -->
+      <div class="card-deck">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <!-- Card -->
+          <div class="card">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="images/web_dev_1.jpg" alt="boago">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
             </div>
-
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h4 class="card-title">Boago</h4>
+              <!-- Text -->
+              <p class="card-text">A simple description about your hobbies</p>
+              <!-- Button -->
+              <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+            </div>
           </div>
+          <!-- Card -->
         </div>
-        <!-- Card -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <!-- Card -->
+          <div class="card mb-4">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="images/web_dev_2.jpg" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h4 class="card-title">Gorata</h4>
+              <!-- Text -->
+              <p class="card-text">A simple description about your hobbies</p>
+              <!-- Button -->
+              <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+            </div>
+          </div>
+          <!-- Card -->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <!-- Card -->
+          <div class="card mb-4">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="images/web_dev_3.jpg" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h4 class="card-title">Jamie </h4>
+              <!-- Text -->
+              <p class="card-text">A simple description about your hobbies</p>
+              <!-- Button -->
+              <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+            </div>
+          </div>
+          <!-- Card -->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <!-- Card -->
+          <div class="card">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="images/web_dev_4.jpg" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h4 class="card-title">Gaone </h4>
+              <!-- Text -->
+              <p class="card-text">A simple description about your hobbies</p>
+              <!-- Button -->
+              <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+            </div>
+          </div>
+          <!-- Card -->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <!-- Card -->
+          <div class="card mb-4">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="images/web_dev_5.jpg" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h4 class="card-title">Karabo</h4>
+              <!-- Text -->
+              <p class="card-text">A simple description about your hobbies</p>
+              <!-- Button -->
+              <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+            </div>
+          </div>
+          <!-- Card -->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <!-- Card -->
+          <div class="card mb-4">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="images/web_dev_6.jpg" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h4 class="card-title">Fiona </h4>
+              <!-- Text -->
+              <p class="card-text">A simple description about your hobbies</p>
+              <!-- Button -->
+              <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+            </div>
+          </div>
+          <!-- Card -->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <!-- Card -->
+          <div class="card mb-4">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="images/web_dev_7.jpg" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h4 class="card-title">Katlego</h4>
+              <!-- Text -->
+              <p class="card-text">A simple description about your hobbies</p>
+              <!-- Button -->
+              <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+            </div>
+          </div>
+          <!-- Card -->
+        </div>
+  
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <!-- Card -->
+          <div class="card mb-4">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="images/web_dev_8.jpg" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h4 class="card-title">Pono</h4>
+              <!-- Text -->
+              <p class="card-text">A simple description about your hobbies</p>
+              <!-- Button -->
+              <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+            </div>
+          </div>
+          <!-- Card -->
+        </div>
+  
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <!-- Card -->
+          <div class="card mb-4">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="images/terminator.jpg" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h4 class="card-title">Theo Motsisi</h4>
+              <!-- Text -->
+              <p class="card-text">A simple description about your hobbies</p>
+              <!-- Button -->
+              <div style="text-align: center;">
+                <div style="text-align: center;">
+                  <button type="button" class="btn btn-light-blue btn-md custom-button">
+                    <i class="fas fa-info-circle"></i> Read more
+                  </button>
+                </div>
+  
+              </div>
+  
+            </div>
+          </div>
+          <!-- Card -->
+        </div>
       </div>
+      <!-- Card deck -->
     </div>
-    <!-- Card deck -->
   </div>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -283,13 +342,13 @@
           </p>
           <div class="mt-4">
             <!-- Facebook -->
-            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-facebook-f"></i></a>
+            <a type="button" class="btn btn-floating btn-warning btn-lg" href="https://www.facebook.com/p/Orange-Digital-Center-Botswana-100087295106468/"><i class="fab fa-facebook-f"></i></a>
             <!-- Dribbble -->
-            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-dribbble"></i></a>
+            <a type="button" class="btn btn-floating btn-warning btn-lg" href="https://dribbble.com/shots/popular/web-design"><i class="fab fa-dribbble"></i></a>
             <!-- Twitter -->
-            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+            <a type="button" class="btn btn-floating btn-warning btn-lg" href="https://twitter.com/orangebw?lang=en"><i class="fab fa-twitter"></i></a>
             <!-- Google + -->
-            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-google-plus-g"></i></a>
+            <a type="button" class="btn btn-floating btn-warning btn-lg" href="https://en.wikipedia.org/wiki/Google%2B"><i class="fab fa-google-plus-g"></i></a>
             <!-- Linkedin -->
           </div>
         </div>
@@ -302,7 +361,7 @@
          
           <ul class="fa-ul" style="margin-left: 1.65em;">
             <li class="mb-3">
-              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Game-City, Orange Digital Center</span>
+              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Orange Digital Center</span>
             </li>
             <li class="mb-3">
               <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">info@orangedigitalcenter.com</span>
