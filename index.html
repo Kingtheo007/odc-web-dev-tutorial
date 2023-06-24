@@ -32,6 +32,13 @@
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       /* Increase the shadow effect on hover */
     }
+    .lead {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
 
     .custom-button {
       border: 1px solid #fff;
@@ -147,7 +154,12 @@
     margin-right: 20px;
     /* Added margin */
   }
-
+  .text-justify {
+      text-align: left;
+      font-size: 22px;
+      font-weight: lighter;
+    
+    }
   .navbar-nav .nav-item .nav-link:hover {
     background-color: #fff;
     color: #000;
@@ -216,12 +228,23 @@
   </div>
   <!--/.Carousel Wrapper-->
   <div class="p-5 text-center bg-light">
+    <div class="container">
+      <h1 class="display-4">Orange Digital Center</h1>
+      
+    
+      <br>
+      <p class="text-justify">
+        Orange Digital Center houses four strategic programs under the same roof: the coding school,
+        the FabLab Solidaire, Orange Fab, and Orange Digital Ventures Africa.
+        This network of free and inclusive resources supports local start-ups and projects using digital technology
+        and they are being rolled out across the Middle East and Africa.
+        <a href="https://github.com/Kingtheo007/odc-web-dev-tutorial" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </p>
+      <br>
+    </div>
     <div >
-
-      <h1 style="color: #000;">Coding Shool</h1>
-      <h5 style="color: #000;">Intake 001 Github Collaboration</h5>
-      <p style="text-align: center; padding: 10px;" >Orange Digital Center houses four strategic programs under the same roof: the coding school, the FabLab Solidaire, Orange Fab, and Orange Digital Ventures Africa. This network of free and inclusive resources supports local start-ups and projects using digital technology and they are being rolled out across the Middle East and Africa.</p>
-
       <!-- Card deck -->
       <div class="card-deck">
         <div class="col-xs-12 col-sm-6 col-md-4">
@@ -239,7 +262,7 @@
               <!-- Title -->
               <h4 class="card-title">Boago</h4>
               <!-- Text -->
-              <p class="card-text">A simple description about your hobbies</p>
+              <p class="lead">A simple description about your hobbies</p>
               <!-- Button -->
               <button type="button" class="btn btn-light-blue btn-md">Read more</button>
             </div>
@@ -261,7 +284,7 @@
               <!-- Title -->
               <h4 class="card-title">Gorata</h4>
               <!-- Text -->
-              <p class="card-text">
+              <p class="lead">
                 <l>travelling and touring
                   cooking
                   watching movies
@@ -288,7 +311,7 @@
               <!-- Title -->
               <h4 class="card-title">Jamie Anderson</h4>
               <!-- Text -->
-              <p class="card-text">View my portfolio here and learn more about me!</p>
+              <p class="lead">View my portfolio here and learn more about me!</p>
               <!-- Button -->
               <a href="https://www.linkedin.com/in/jamie-anderson-516b33244/" class="btn btn-light-blue btn-md">Click
                 here</a>
@@ -312,7 +335,7 @@
               <!-- Title -->
               <h4 class="card-title">Gaone </h4>
               <!-- Text -->
-              <p class="card-text">A simple description about your hobbies</p>
+              <p class="lead">A simple description about your hobbies</p>
               <!-- Button -->
               <button type="button" class="btn btn-light-blue btn-md">Read more</button>
             </div>
@@ -340,7 +363,7 @@
               <!-- Title -->
               <h4 class="card-title">Karabo Chilisa</h4>
               <!-- Text -->
-              <p class="card-text">A simple description about your hobbies</p>
+              <p class="lead">A simple description about your hobbies</p>
               <!-- Button -->
               <button type="button" class="btn btn-light-blue btn-md">Read more</button>
             </div>
@@ -362,7 +385,7 @@
               <!-- Title -->
               <h4 class="card-title">Fiona Kagiso</h4>
               <!-- Text -->
-              <p class="card-text">Friliking all the way...check this out!</p>
+              <p class="lead">Friliking all the way...check this out!</p>
               <!-- Button -->
               <button type="button" class="btn btn-light-blue btn-md"
                 onclick="window.location.href='https://www.youtube.com'">Click here</button>
@@ -386,7 +409,7 @@
               <!-- Title -->
               <h4 class="card-title">Katlego Gaenewe</h4>
               <!-- Text -->
-              <p class="card-text" style="font-family: Verdana, sans-serif;">An introvert who enjoys taking on new
+              <p class="lead">An introvert who enjoys taking on new
                 challenges and going out of her comfort zone.</p>
               <!-- Button -->
               <button type="button" class="btn btn-light-blue btn-md">Read more</button>
@@ -407,9 +430,9 @@
             <!-- Card content -->
             <div class="card-body">
               <!-- Title -->
-              <h4 class="card-title"><b>Pono Kaniwa</b></h4>
+              <h4 class="card-title">Pono Kaniwa</h4>
               <!-- Text -->
-              <p class="card-text" style="font-family: Verdana, sans-serif;">Coding <br> 
+              <p class="lead">Coding and
                 Reading</p>
               <!-- Button -->
               <button type="button" class="btn btn-light-blue btn-md">Read more</button>
@@ -432,7 +455,7 @@
               <!-- Title -->
               <h4 class="card-title">Theo Motsisi</h4>
               <!-- Text -->
-              <p class="card-text">Check out my weather app that fetches data from OpenWeatherMap API <br></p>
+              <p class="lead">Check out my weather app that fetches data from OpenWeatherMap API <br></p>
               <!-- Button -->
               <div style="text-align: center;">
                 <div style="text-align: center;">
@@ -472,7 +495,7 @@
         <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
           <h5 class="text-uppercase mb-4">About company</h5>
   
-          <div style="text-align: right;">
+          <div style="text-align: justify;">
             <p style="padding: 50px,0px,50px,0px;">
               Orange Digital Center houses four strategic programs under the same roof : the coding school, the FabLab
               Solidaire, Orange Fab and Orange Digital Ventures Africa.
