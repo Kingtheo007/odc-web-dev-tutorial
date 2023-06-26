@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Christopher Nolan - Movie Director</title>
+  <style>
+    /* Global Styles */
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #222;
+      color: #fff;
+    }
+
+    /* Header Styles */
+
+    header {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0;
+      text-align: center;
+    }
+
+    /* Main Content Styles */
+
+    main {
+      padding: 40px;
+      animation: fadeIn 1s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 30px 0 10px;
+      color: #ffcd46;
+    }
+
+    ul {
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 5px;
+    }
+
+    /* Animation Styles */
+
+    @keyframes flicker {
+      0%, 19.9%, 22%, 62.9%, 64%, 100% { opacity: 1; }
+      20%, 21.9%, 63%, 63.9% { opacity: 0.5; }
+    }
+
+    /* Slider Styles */
+
+    .slider-container {
+      max-width: 600px;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slider {
+      display: flex;
+      animation: slide 10s infinite;
+    }
+
+    .slide {
+      flex-shrink: 0;
+      width: 100%;
+      height: auto;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .slide.active {
+      opacity: 1;
+    }
+
+    /* Media Queries */
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About Christopher Nolan</h1>
+  </header>
+  <main>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide active">
+          <img src="images/tenet.jpeg" alt="Tenet">
+        </div>
+        <div class="slide">
+          <img src="images/dunkirk.jpeg" alt="Dunkirk">
+        </div>
+        <div class="slide">
+          <img src="images/interstellar.jpeg" alt="Interstellar">
+        </div>
+      </div>
+    </div>
+
+    <h2>Filmography</h2>
+    <ul>
+      <li>Memento (2000)</li>
+      <li>The Dark Knight Trilogy:
+        <ul>
+          <li>Batman Begins (2005)</li>
+          <li>The Dark Knight (2008)</li>
+          <li>The Dark Knight Rises (2012)</li>
+        </ul>
+      </li>
+      <li>Inception (2010)</li>
+      <li>Interstellar (2014)</li>
+      <li>Dunkirk (2017)</li>
+      <li>Tenet (2020)</li>
+    </ul>
+
+    <h2>Awards and Recognition</h2>
+    <p>
+      Christopher Nolan's work has garnered critical acclaim and numerous awards. He has received several Academy Award nominations, including Best Director and Best Original Screenplay for films like Inception and Dunkirk.
+      In 2010, he received his first Academy Award nomination for Best Director for the film Inception.
+      Nolan has also been recognized by organizations such as the Directors Guild of America and the British Academy of Film and Television Arts.
+    </p>
+
+    <h2>Personal Life</h2>
+    <p>
+      Christopher Nolan is married to Emma Thomas, who has produced many of his films. They have four children together.
+      Outside of his film career, Nolan is known for his preference for practical effects and his emphasis on shooting on film rather than digital.
+    </p>
+  </main>
+
+  <script>
+    // Slider Logic
+
+    const slides = document.querySelectorAll('.slide');
+
+    function slideShow() {
+      let activeSlide = document.querySelector('.slide.active');
+      let nextSlide = activeSlide.nextElementSibling;
+
+      if (!nextSlide) {
+        nextSlide = slides[0];
+      }
+
+      activeSlide.classList.remove('active');
+      nextSlide.classList.add('active');
+    }
+
+    setInterval(slideShow, 5000);
+  </script>
+</body>
+</html>
