@@ -32,80 +32,224 @@
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       /* Increase the shadow effect on hover */
     }
+    .lead {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
 
     .custom-button {
       border: 1px solid #fff;
       /* Example border styles */
+      border-radius: 30px;
       background-color: #3192ED;
+     
       /* Example background color */
-      color: white;
+     
     }
   </style>
 </head>
 
 <header>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="images/logo.png" alt="Logo" />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-mdb-toggle="collapse"
-        data-mdb-target="#navbarExample01"
-        aria-controls="navbarExample01"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarExample01">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" style="color: #fff;" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: #fff;" href="#">Tutorials</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: #fff;" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: #fff;" href="#">About</a>
-          </li>
-        </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-5">
+
+    <!-- Navbar brand with logo -->
+    <a class="navbar-brand" href="#">
+      <div class="d-flex align-items-start">
+        <img src="images/orange_master_logo.svg" alt="Logo" style="margin-right: 10px;">
+        <h5 class="text-white">
+          Orange<br>
+          Digital Center
+        </h5>
       </div>
-      
+    </a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse justify-content-center" id="basicExampleNav">
+
+      <!-- Links -->
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">
+            <i class="fas fa-home"></i> Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fas fa-user"></i> Profiles
+          </a>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-users"></i> Class Tutorials
+          </a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="https://website-hosting-bcbd7.web.app/" target="_blank">Fiona Kagiso</a>
+            <a class="dropdown-item" href="#">Karabo Chilisa</a>
+            <a class="dropdown-item" href="#">Katlego Gaenewe</a>
+            <a class="dropdown-item" href="https://jamie69beever.web.app/" target="_blank">Jamie Anderson</a>
+            <a class="dropdown-item" href="https://gorata-72e81.web.app/" target="_blank">Gorata Ditshweu</a>
+            <a class="dropdown-item" href="https://website-hosting-f7c2b.web.app/" target="_blank">Pono Kaniwa</a>
+            <a class="dropdown-item" href="https://gaosefirstproject.web.app/" target="_blank">Goane Moruti</a>
+            <a class="dropdown-item" href="https://batmanthesite.web.app/" target="_blank">Theo Motsisi</a>
+          </div>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-section">
+            <i class="fas fa-address-book"></i> Contacts
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fas fa-info-circle"></i> About
+          </a>
+        </li>
+
+
+      </ul>
+      <!-- Links -->
+
+      <form class="form-inline ml-auto">
+        <div class="input-group">
+          <input class="form-control" type="text" placeholder="Search" aria-label="Search" style="background-color: transparent; color: white;">
+          <div class="input-group-append">
+            <button class="btn btn-outline-light" type="button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+
+
     </div>
-    
+    <!-- Collapsible content -->
+
   </nav>
   <!-- Navbar -->
 </header>
+
 
 <style>
   .navbar-nav .nav-item .nav-link {
     transition: background-color 0.3s, color 0.3s;
     border-radius: 30px;
     padding: 10px 15px;
-    color: #000;
-    text-decoration: #000;
-    margin-right: 20px; /* Added margin */
-  }
-  
-  .navbar-nav .nav-item .nav-link:hover {
-    background-color: #FFC107;
     color: #fff;
+    text-decoration: #fff;
+    margin-right: 20px;
+    /* Added margin */
+  }
+  .text-justify {
+      text-align: left;
+      font-size: 22px;
+      font-weight: lighter;
+    
+    }
+  .navbar-nav .nav-item .nav-link:hover {
+    background-color: #fff;
+    color: #000;
   }
 </style>
-<body>
-  <div class="p-5 text-center bg-light">
-    <div style="padding: 50px 10px 50px 10px;">
 
+<body>
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-2" data-slide-to="1"></li>
+      <li data-target="#carousel-example-2" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="view">
+          <img class="d-block w-100" src="./images/Jamie.jpg"
+            alt="First slide">
+          <div class="mask rgba-black-light"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">Jamie Anderson</h3>
+          <p>Graphic Designer</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100" src="./images/pono_goane.jpg"
+            alt="Second slide">
+          <div class="mask rgba-black-strong"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">Pono and Gaone</h3>
+          <p>JavaScript and Php Developers</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100" src="./images/boago.jpg"
+            alt="Third slide">
+          <div class="mask rgba-black-slight"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">Boago Modise</h3>
+          <p>Business Intelligance</p>
+        </div>
+      </div>
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+  <!--/.Carousel Wrapper-->
+  <div class="p-5 text-center bg-light">
+    <div class="container">
+      <h1 class="display-4">Orange Digital Center</h1>
+      
+    
+      <br>
+      <p class="text-justify">
+        Orange Digital Center houses four strategic programs under the same roof: the coding school,
+        the FabLab Solidaire, Orange Fab, and Orange Digital Ventures Africa.
+        This network of free and inclusive resources supports local start-ups and projects using digital technology
+        and they are being rolled out across the Middle East and Africa.
+        <a href="https://github.com/Kingtheo007/odc-web-dev-tutorial" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </p>
+      <br>
+    </div>
+    <div >
       <!-- Card deck -->
       <div class="card-deck">
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-md-4">
           <!-- Card -->
           <div class="card">
             <!-- Card image -->
@@ -120,14 +264,14 @@
               <!-- Title -->
               <h4 class="card-title">Boago</h4>
               <!-- Text -->
-              <p class="card-text">A simple description about your hobbies</p>
+              <p class="lead">A simple description about your hobbies</p>
               <!-- Button -->
               <button type="button" class="btn btn-light-blue btn-md">Read more</button>
             </div>
           </div>
           <!-- Card -->
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-md-4">
           <!-- Card -->
           <div class="card mb-4">
             <!-- Card image -->
@@ -142,10 +286,11 @@
               <!-- Title -->
               <h4 class="card-title">Gorata</h4>
               <!-- Text -->
-              <p class="card-text"><l>travelling and touring
-cooking
-watching movies
-</l>
+              <p class="lead">
+                <l>travelling and touring
+                  cooking
+                  watching movies
+                </l>
               </p>
               <!-- Button -->
               <button type="button" class="btn btn-light-blue btn-md">Read more</button>
@@ -153,7 +298,7 @@ watching movies
           </div>
           <!-- Card -->
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-md-4">
           <!-- Card -->
           <div class="card mb-4">
             <!-- Card image -->
@@ -168,15 +313,15 @@ watching movies
               <!-- Title -->
               <h4 class="card-title">Jamie Anderson</h4>
               <!-- Text -->
-              <p class="card-text">View my portfolio here and learn more about me!</p>
+              <p class="lead">View my portfolio here and learn more about me!</p>
               <!-- Button -->
-              <a href="https://www.linkedin.com/in/jamie-anderson-516b33244/" class="btn btn-light-blue btn-md">Click here</a>
+              <button type="button" class="btn btn-outline-secondary">Click Here</button>
 
             </div>
           </div>
           <!-- Card -->
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-md-4">
           <!-- Card -->
           <div class="card">
             <!-- Card image -->
@@ -191,19 +336,25 @@ watching movies
               <!-- Title -->
               <h4 class="card-title">Gaone </h4>
               <!-- Text -->
-              <p class="card-text">A simple description about your hobbies</p>
+              <p class="lead">A simple description about your hobbies</p>
               <!-- Button -->
               <button type="button" class="btn btn-light-blue btn-md">Read more</button>
             </div>
           </div>
           <!-- Card -->
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-md-4">
           <!-- Card -->
           <div class="card mb-4">
             <!-- Card image -->
             <div class="view overlay">
-              <img class="card-img-top" src="images/web_dev_5.jpg" alt="Card image cap">
+              <div class="image-container">
+                <img class="card-img-top"
+              
+                  src="images/naruto-pictures-for-large-desktop-wallpaper-preview.jpeg" alt="Card image cap">
+
+              </div>
+
               <a href="#!">
                 <div class="mask rgba-white-slight"></div>
               </a>
@@ -211,16 +362,16 @@ watching movies
             <!-- Card content -->
             <div class="card-body">
               <!-- Title -->
-              <h4 class="card-title">Karabo</h4>
+              <h4 class="card-title">Karabo Chilisa</h4>
               <!-- Text -->
-              <p class="card-text">A simple description about your hobbies</p>
+              <p class="lead">A simple description about your hobbies</p>
               <!-- Button -->
               <button type="button" class="btn btn-light-blue btn-md">Read more</button>
             </div>
           </div>
           <!-- Card -->
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-md-4">
           <!-- Card -->
           <div class="card mb-4">
             <!-- Card image -->
@@ -235,20 +386,21 @@ watching movies
               <!-- Title -->
               <h4 class="card-title">Fiona Kagiso</h4>
               <!-- Text -->
-              <p class="card-text">Friliking all the way...check this out!</p>
+              <p class="lead">Friliking all the way...check this out!</p>
               <!-- Button -->
-            <button type="button" class="btn btn-light-blue btn-md" onclick="window.location.href='https://www.youtube.com'">Click here</button>
+              <button type="button" class="btn btn-light-blue btn-md"
+                onclick="window.location.href='https://www.youtube.com'">Click here</button>
 
             </div>
           </div>
           <!-- Card -->
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-md-4">
           <!-- Card -->
           <div class="card mb-4">
             <!-- Card image -->
             <div class="view overlay">
-              <img class="card-img-top" src="images/web_dev_7.jpg" alt="Card image cap">
+              <img class="card-img-top" src="images/animation.jpg" alt="Card image cap">
               <a href="#!">
                 <div class="mask rgba-white-slight"></div>
               </a>
@@ -256,22 +408,22 @@ watching movies
             <!-- Card content -->
             <div class="card-body">
               <!-- Title -->
-              <h4 class="card-title">Katlego</h4>
+              <h4 class="card-title">Katlego Gaenewe</h4>
               <!-- Text -->
-              <p class="card-text">A simple description about your hobbies</p>
+              <p class="lead">An introvert who enjoys taking on new
+                challenges and going out of her comfort zone.</p>
               <!-- Button -->
               <button type="button" class="btn btn-light-blue btn-md">Read more</button>
             </div>
           </div>
-          <!-- Card -->
         </div>
-  
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        
+        <div class="col-md-4">
           <!-- Card -->
           <div class="card mb-4">
             <!-- Card image -->
             <div class="view overlay">
-              <img class="card-img-top" src="images/bunny.jpeg" alt="Card image cap">
+              <img class="card-img-top" src="images/dev.jpg" alt="Card image cap">
               <a href="#!">
                 <div class="mask rgba-white-slight"></div>
               </a>
@@ -281,8 +433,8 @@ watching movies
               <!-- Title -->
               <h4 class="card-title">Pono Kaniwa</h4>
               <!-- Text -->
-              <p class="card-text"><l>Coding
-              reading</l>
+              <p class="card-text"><l>Coding</l>
+              <l>reading</l>
               </p>
               <!-- Button -->
               <button type="button" class="btn btn-light-blue btn-md">Read more</button>
@@ -290,8 +442,7 @@ watching movies
           </div>
           <!-- Card -->
         </div>
-  
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-md-4">
           <!-- Card -->
           <div class="card mb-4">
             <!-- Card image -->
@@ -306,11 +457,11 @@ watching movies
               <!-- Title -->
               <h4 class="card-title">Theo Motsisi</h4>
               <!-- Text -->
-              <p class="card-text">Check out my weather app that fetches data from OpenWeatherMap API</p>
+              <p class="lead">Check out my weather app that fetches data from OpenWeatherMap API <br></p>
               <!-- Button -->
               <div style="text-align: center;">
                 <div style="text-align: center;">
-                  <button type="button" class="btn btn-light-blue btn-md custom-button">
+                  <button  type="button" onclick="navigate()" style="color: #fff; width: 150px;" class="btn btn-light-blue btn-md custom-button">
                     <i class="fas fa-info-circle"></i> Read more
                   </button>
                 </div>
@@ -322,10 +473,12 @@ watching movies
           <!-- Card -->
         </div>
       </div>
-      <!-- Card deck -->
+     
     </div>
+    <!-- Card deck -->
   </div>
-  
+  </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -334,6 +487,7 @@ watching movies
 
 
 
+<div id="contact-section">
   <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
     <!-- Grid container -->
     <div class="container p-4">
@@ -342,35 +496,44 @@ watching movies
         <!--Grid column-->
         <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
           <h5 class="text-uppercase mb-4">About company</h5>
-
-          <p>
-            Orange Digital Center houses four strategic programs under the same roof : the coding school, the FabLab Solidaire, Orange Fab and Orange Digital Ventures Africa.
-          </p>
+  
+          <div style="text-align: justify;">
+            <p style="padding: 50px,0px,50px,0px;">
+              Orange Digital Center houses four strategic programs under the same roof : the coding school, the FabLab
+              Solidaire, Orange Fab and Orange Digital Ventures Africa.
+            </p>
+          </div>
           <div class="mt-4">
             <!-- Facebook -->
-            <a type="button" class="btn btn-floating btn-warning btn-lg" href="https://www.facebook.com/p/Orange-Digital-Center-Botswana-100087295106468/"><i class="fab fa-facebook-f"></i></a>
+            <a type="button" class="btn btn-floating btn-warning btn-lg"
+              href="https://www.facebook.com/p/Orange-Digital-Center-Botswana-100087295106468/"><i
+                class="fab fa-facebook-f"></i></a>
             <!-- Dribbble -->
-            <a type="button" class="btn btn-floating btn-warning btn-lg" href="https://dribbble.com/shots/popular/web-design"><i class="fab fa-dribbble"></i></a>
+            <a type="button" class="btn btn-floating btn-warning btn-lg"
+              href="https://dribbble.com/shots/popular/web-design"><i class="fab fa-dribbble"></i></a>
             <!-- Twitter -->
-            <a type="button" class="btn btn-floating btn-warning btn-lg" href="https://twitter.com/orangebw?lang=en"><i class="fab fa-twitter"></i></a>
+            <a type="button" class="btn btn-floating btn-warning btn-lg" href="https://twitter.com/orangebw?lang=en"><i
+                class="fab fa-twitter"></i></a>
             <!-- Google + -->
-            <a type="button" class="btn btn-floating btn-warning btn-lg" href="https://en.wikipedia.org/wiki/Google%2B"><i class="fab fa-google-plus-g"></i></a>
+            <a type="button" class="btn btn-floating btn-warning btn-lg" href="https://en.wikipedia.org/wiki/Google%2B"><i
+                class="fab fa-google-plus-g"></i></a>
             <!-- Linkedin -->
           </div>
         </div>
         <!--Grid column-->
-
+  
         <!--Grid column-->
         <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-        
+  
           <h5 class="text-uppercase mb-4">Contact Us</h5>
-         
+  
           <ul class="fa-ul" style="margin-left: 1.65em;">
             <li class="mb-3">
               <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Orange Digital Center</span>
             </li>
             <li class="mb-3">
-              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">info@orangedigitalcenter.com</span>
+              <span class="fa-li"><i class="fas fa-envelope"></i></span><span
+                class="ms-2">info@orangedigitalcenter.com</span>
             </li>
             <li class="mb-3">
               <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 267 75328701</span>
@@ -381,11 +544,11 @@ watching movies
           </ul>
         </div>
         <!--Grid column-->
-
+  
         <!--Grid column-->
         <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
           <h5 class="text-uppercase mb-4">Opening hours</h5>
-
+  
           <table class="table text-center text-white">
             <tbody class="font-weight-normal">
               <tr>
@@ -408,16 +571,24 @@ watching movies
       <!--Grid row-->
     </div>
     <!-- Grid container -->
-
+  
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       <a class="text-white" href="https://www.orangedigitalcenters.com/">www.orangedigitalcenter.com</a>
     </div>
     <!-- Copyright -->
   </footer>
-  
+</div>
 
-  
 
+
+
+<script>
+  function navigate() {
+    // Perform your navigation logic here
+    // For example, redirect to another page
+    window.location.href = "weather.html";
+  }
+</script>
 
 </html>
