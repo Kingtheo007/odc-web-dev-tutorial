@@ -1,8 +1,6 @@
 .card-deck {
   margin: 20px 0;
-  background-image: url("path/to/your/image.jpg");
-  background-size: cover;
-  background-position: center;
+ 
 }
 
 .card-img-top {
