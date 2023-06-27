@@ -1,133 +1,173 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Hiking Club</title>
-  <style>
-    /* CSS styles for the hiking club website */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      box-sizing: border-box;
-      background: rgb(88,36,4);
-      background: linear-gradient(321deg, rgba(88,36,4,1) 0%, rgba(222,171,14,1) 35%, rgba(249,135,42,1) 100%);
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-    
-    header {
-      
-      color: black;
-      padding: 20px;
-    }
-    
-    h1 {
-      margin: 0;
-    }
-    .navigation {
-      background: rgba( 217, 184, 152, 0.25 );
-     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-     backdrop-filter: blur( 3px );
-     -webkit-backdrop-filter: blur( 3px );
-     border-radius: 10px;
-     border: 1px solid rgba( 255, 255, 255, 0.18 );
-     display: flex;
-     flex-direction: row;
+  <head>
+    <title>Coders Hiking Club</title>
+    <link
+      rel="shortcut icon"
+      href="images/gaone-icon.png"
+      type="image/x-icon"
+    />
+    <style>
+      /* CSS styles for the hiking club website */
 
+      @import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Handlee&family=Just+Another+Hand&family=Lobster&family=Rajdhani:wght@300;400&family=Roboto+Slab:wght@100;200;300;400;500;600;700&family=Sue+Ellen+Francisco&display=swap");
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        background-image: url(images/hiking-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
 
-    }
-    
-    nav {
-     
-      padding: 10px;
-      
-    }
-    
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-    
-    nav ul li {
-      display: inline;
-      margin-right: 10px;
-    }
-    
-    nav a {
-      color: #fff;
-      text-decoration: none;
-    }
-    
-    main {
-      padding: 20px;
-      background: rgba( 217, 184, 152, 0.25 );
-      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-      backdrop-filter: blur( 3px );
-      -webkit-backdrop-filter: blur( 3px );
-      border-radius: 10px;
-      border: 1px solid rgba( 255, 255, 255, 0.18 );
-      margin-top: 10px;
-      margin-bottom: 20px;
+      header {
+        color: black;
+        padding: 20px;
+      }
 
+      h1 {
+        margin: 0;
+      }
 
-    }
-    .eligibility {
+      h6 {
+        font-family: "Rajdhani", sans-serif;
+      }
+
+      .navigation {
+        background: rgba(217, 184, 152, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: flex;
+        flex-direction: row;
+      }
+
+      main {
+        padding: 20px;
+        background: rgba(217, 184, 152, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+
+      img {
+        width: 48%;
+        height: 200px;
+        transition: transform 0.3s ease;
+      }
+
+      img:hover {
+        transform: scale(1.2);
+      }
+
+      .eligibility {
         text-align: center;
-    }
-    button {
-        border: 1px brown;
-        padding: 5px;
+      }
+
+      button {
+        padding: 10px;
         font-size: 25px;
-        border-radius: 30%;
-    }
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        background: #d88f40;
+        color: black;
+        cursor: pointer;
+        box-shadow: inset 0 0 0 0#312322;
+        transition: ease-out 0.7s;
+      }
 
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-      backdrop-filter: blur( 3px );
-      -webkit-backdrop-filter: blur( 3px );
-      border-radius: 10px;
-      border: 1px solid rgba( 255, 255, 255, 0.18 );
-    }
-  </style>
-</head>
-<body>
+      button:hover {
+        box-shadow: inset 200px 0 0 0 #312322;
+        color: #edc48e;
+      }
+    </style>
+  </head>
+
+  <body>
     <div class="navigation">
-  <header>
-    <h1>Hiking Club</h1>
-  </header>
-  </div>
-  <main>
-    <h2>Welcome to the Hiking Club!</h2>
-    <p>Join us for exciting hiking adventures and explore nature's wonders.</p>
-    
-    <h2>About Us</h2>
-    <p>The Hiking Club is a community of outdoor enthusiasts passionate about hiking and connecting with nature.</p>
-    
-    <h2>Upcoming Events</h2>
-    <ul>
-      <li>Up Kgale - July 10, 2023</li>
-      <li>Tsodilo Hills Exploration - July 18, 2023</li>
-      <li>Table Mountain CPT Adventure - November 25, 2023</li>
-    </ul>
-    
-    <h2>Gallery</h2>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCtQXPHMmuixm1eIP-bgzQhxRywEOgTXBiVg&usqp=CAU" alt="Hiking Image 1" width="300">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCiG1g_jTTSUcTzqmcpsnC1UAwNFZcOTSTNw&usqp=CAU" alt="Hiking Image 2" width="300">
-  <hr>
-  <div class="eligibility">
-  <h3>Wanna join the hiking squad? Click below to check your eligibility</h3>
-  <button>Click to check</button>
-</div>
+      <header>
+        <h1>Coders Hiking Club</h1>
+      </header>
+    </div>
+    <main>
+      <h2>Welcome to Coders Hiking Club!</h2>
+      <p>
+        Join us for exciting hiking adventures and explore nature's wonders.
+      </p>
 
-  </main>
+      <h2>About Us</h2>
+      <p>
+        Coders Hiking Club is a tech savvy community of outdoor enthusiasts
+        <br />
+        passionate about coding, hiking and connecting with nature. We love
+        defying <br />
+        the odds of connectivity coverage, so we always code at the mountain
+        tops. <br />Yupp! We are adventurous like that.
+      </p>
 
-</body>
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>Up Kgale - July 10, 2023</li>
+        <li>Tsodilo Hills Exploration - July 18, 2023</li>
+        <li>Table Mountain CPT Adventure - November 25, 2023</li>
+      </ul>
+
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img
+          src="images/hikeslideshow1.jpg"
+          alt="Hiking Image 1"
+          style="border-radius: 8px"
+        />
+        <img
+          src="images/hikeslideshow5.jpg"
+          alt="Hiking Image 4"
+          style="border-radius: 8px"
+        />
+      </div>
+      <hr />
+      <div class="eligibility">
+        <h3>
+          Wanna join the hiking squad? Click to check if you match the squad.
+        </h3>
+        <button onclick="askEligibility()">Check</button><br /><br />
+        <a
+          href="https://bw.linkedin.com/in/gaone-moruti-9180b6281"
+          style="color: #312322"
+          >coded by gaonemoruti</a
+        >
+      </div>
+    </main>
+    <script>
+      function askEligibility() {
+        let name = prompt("What is your name?");
+        let age = prompt("How old are you?");
+        let h2 = document.querySelector("h3");
+        if (age < 18 && passion) {
+          h2.innerHTML = "Sorry " + name + ", eligibility age is 18-39 years.";
+        } else {
+          if (age > 39) {
+            h2.innerHTML =
+              "Sorry " + name + ", eligibility age is 18-39 years.";
+          } else {
+            h2.innerHTML =
+              "Yipee! " +
+              name +
+              ", you are within 18-39 age bracket. You match the squad!";
+          }
+        }
+      }
+    </script>
+  </body>
 </html>
