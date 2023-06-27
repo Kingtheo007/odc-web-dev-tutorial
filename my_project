@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming Jobs Board</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+
+      background-color: rgb(232, 232, 176);
+    }
+    
+    header {
+      background-color: #1be510;
+      color: #fff;
+      padding: 20px;
+    }
+    
+    h1 {
+      margin: 0;
+    }
+    
+    main {
+      padding: 20px;
+    }
+    
+    .job-card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .job-card h2 {
+      margin-top: 0;
+    }
+    
+    .job-card p {
+      margin-bottom: 10px;
+    }
+    
+    .job-card .apply-button {
+      background-color: #1193e3;
+      color: #d3dadf;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .job-card .apply-button:hover {
+      background-color: #0c64b2;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Programming Jobs Board</h1>
+  </header>
+
+  <main>
+    <div class="job-card">
+      <h2>Front-end Developer</h2>
+      <p>Company: ABC Tech</p>
+      <p>Location: New York</p>
+      <p>Description: We are looking for a skilled front-end developer with experience in HTML, CSS, and JavaScript.</p>
+      <button class="apply-button" onclick="window.location.href='my_project2.html'">Apply</button>
+    </div>
+
+    <div class="job-card">
+      <h2>Back-end Developer</h2>
+      <p>Company: XYZ Solutions</p>
+      <p>Location: San Francisco</p>
+      <p>Description: Join our team as a back-end developer and work with cutting-edge technologies like Node.js and MongoDB.</p>
+      <button class="apply-button" onclick="window.location.href='my_project2.html'">Apply</button>
+    </div>
+    
+    <!-- Add more job cards here -->
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Programming Jobs Board. All rights reserved.</p>
+  </footer>
+</body>
+</html>
