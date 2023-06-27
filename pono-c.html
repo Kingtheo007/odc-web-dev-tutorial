@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marvel API Comic Data</title>
+    <style>
+        body {
+            overflow-y: scroll;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .comic {
+            margin: 10px;
+            width: calc(33.33% - 20px);
+            max-width: 250px;
+        }
+
+        .comic img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script>
+        // Fetch comic data from Marvel API
+        const publicKey = 'ef9815cdc93617198d53567d6ec94105';
+        const privateKey = '8eda068437ae7443797bc562757c3f477ae52f37';
+        const ts = new Date().getTime();
+        const hash = CryptoJS.MD5(ts + privateKey + publicKey).toString();
+
+        const apiUrl = `https://gateway.marvel.com/v1/public/comics?ts=${ts}&apikey=${publicKey}&hash=${hash}`;
+
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                const comicsDiv = document.getElementById('comics');
+                const comics = data.data.results;
+                for (let i = 0; i < comics.length; i++) {
+                    const comic = comics[i];
+                    const comicDiv = document.createElement('div');
+                    comicDiv.classList.add('comic');
+                    comicDiv.innerHTML = `
+                        <img src="${comic.thumbnail.path}.${comic.thumbnail.extension}" alt="${comic.title}">
+                        <h2>${comic.title}</h2>
+                        <p>${comic.description || 'No description available.'}</p>
+                    `;
+                    comicsDiv.appendChild(comicDiv);
+                }
+            })
+            .catch(error => {
+                console.log('An error occurred while fetching data:', error);
+            });
+
+        // Change background color dynamically
+        const colors = ['#ed1d24', '#ed1d4d', '#f0146a', '#f014a6'];
+        let currentIndex = 0;
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = colors[currentIndex];
+            currentIndex = (currentIndex + 1) % colors.length;
+        }
+        setInterval(changeBackgroundColor, 3000);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Marvel API Comic Data</h1>
+        <div id="comics" class="row"></div>
+    </div>
+</body>
+</html>
+
