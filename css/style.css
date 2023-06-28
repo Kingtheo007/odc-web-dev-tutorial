@@ -1,0 +1,31 @@
+.card-deck {
+  margin: 20px 0;
+ 
+}
+
+.card-img-top {
+  height: 200px;
+  /* Set the desired height for the card images */
+  object-fit: cover;
+  /* Maintain aspect ratio and cover the container */
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* Add shadow effect to the card */
+  transition: box-shadow 0.3s ease-in-out;
+  /* Add transition effect for hover */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  /* Increase the shadow effect on hover */
+}
+
+.custom-button {
+  border: 1px solid #fff;
+  /* Example border styles */
+  background-color: #3192ED;
+  /* Example background color */
+  color: white;
+}
