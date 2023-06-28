@@ -62,18 +62,22 @@
   <main>
     <div class="job-card">
       <h2>Front-end Developer</h2>
-      <p>Company: ABC Tech</p>
-      <p>Location: New York</p>
+      <p>Company: Orange Digital Center</p>
+      <p>Location: Gaborone </p>
       <p>Description: We are looking for a skilled front-end developer with experience in HTML, CSS, and JavaScript.</p>
       <button class="apply-button" onclick="window.location.href='my_project2.html'">Apply</button>
     </div>
 
     <div class="job-card">
       <h2>Back-end Developer</h2>
-      <p>Company: XYZ Solutions</p>
-      <p>Location: San Francisco</p>
+      <p>Company: Orange Digital Center</p>
+      <p>Location: Francistown</p>
       <p>Description: Join our team as a back-end developer and work with cutting-edge technologies like Node.js and MongoDB.</p>
       <button class="apply-button" onclick="window.location.href='my_project2.html'">Apply</button>
+    </div>
+
+    <div class="go-back-link">
+      <a href="javascript:history.go(-1)">Go back to previous page</a>
     </div>
     
     <!-- Add more job cards here -->
